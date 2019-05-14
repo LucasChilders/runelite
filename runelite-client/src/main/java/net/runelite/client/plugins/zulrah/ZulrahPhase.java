@@ -26,8 +26,8 @@ public class ZulrahPhase {
     ZulrahPhase(final ZulrahPosition zulrahPosition,
                 final ZulrahStance zulrahStance,
                 final PlayerPosition playerPosition,
-                final PlayerAttackStyle playerAttackStyle,
-                final PlayerPosition secondaryPlayerPosition) {
+                final PlayerPosition secondaryPlayerPosition,
+                final PlayerAttackStyle playerAttackStyle) {
         this(zulrahPosition, zulrahStance, playerPosition, playerAttackStyle);
         this.secondaryPlayerPosition = secondaryPlayerPosition;
     }

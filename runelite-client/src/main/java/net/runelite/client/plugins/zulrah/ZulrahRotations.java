@@ -62,11 +62,59 @@ public class ZulrahRotations {
     }};
 
     private static LinkedList<ZulrahPhase> mage = new LinkedList<ZulrahPhase>() {{
-
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.RANGE,
+                PlayerPosition.NORTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.EAST, ZulrahStance.MAGE,
+                PlayerPosition.NORTH_EAST_CORNER, PlayerAttackStyle.RANGE));
+        addLast(new ZulrahPhase(ZulrahPosition.SOUTH, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_WEST_CORNER_N2, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.WEST, ZulrahStance.MAGE,
+                PlayerPosition.SOUTH_WEST_CORNER_N2, PlayerAttackStyle.RANGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.MELEE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerPosition.NORTH_EAST_CORNER,
+                PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.EAST, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.EAST, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.WEST, ZulrahStance.MAGE,
+                PlayerPosition.SOUTH_WEST_CORNER, PlayerAttackStyle.RANGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.MAGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.RANGE));
+        addLast(new ZulrahPhase(ZulrahPosition.EAST, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.MAGE,
+                PlayerPosition.NORTH_EAST_CORNER, PlayerAttackStyle.RANGE));
     }};
 
     private static LinkedList<ZulrahPhase> range = new LinkedList<ZulrahPhase>() {{
-
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.RANGE,
+                PlayerPosition.NORTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.EAST, ZulrahStance.RANGE,
+                PlayerPosition.NORTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.MELEE,
+                PlayerPosition.NORTH_WEST_N2, PlayerPosition.NORTH_WEST,
+                PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.WEST, ZulrahStance.MAGE,
+                PlayerPosition.SOUTH_WEST_CORNER_N2, PlayerAttackStyle.RANGE));
+        addLast(new ZulrahPhase(ZulrahPosition.SOUTH, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.EAST, ZulrahStance.MAGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.RANGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_WEST_CORNER_N2, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.WEST, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_WEST_CORNER_N2, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.MAGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.RANGE));
+        addLast(new ZulrahPhase(ZulrahPosition.EAST, ZulrahStance.RANGE,
+                PlayerPosition.SOUTH_EAST_CORNER, PlayerAttackStyle.MAGE));
+        addLast(new ZulrahPhase(ZulrahPosition.NORTH, ZulrahStance.MAGE,
+                PlayerPosition.NORTH_EAST_CORNER, PlayerAttackStyle.RANGE));
     }};
 
     final static Map<String, LinkedList<ZulrahPhase>> ROUTES = new HashMap<String, LinkedList<ZulrahPhase>>() {{
