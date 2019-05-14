@@ -10,6 +10,7 @@ public class ZulrahPhase {
     @Getter private ZulrahPosition zulrahPosition;
     @Getter private ZulrahStance zulrahStance;
     @Getter private PlayerPosition playerPosition;
+    @Getter private PlayerPosition secondaryPlayerPosition;
     @Getter private PlayerAttackStyle playerAttackStyle;
 
     ZulrahPhase(final ZulrahPosition zulrahPosition,
@@ -20,5 +21,14 @@ public class ZulrahPhase {
         this.zulrahStance = zulrahStance;
         this.playerPosition = playerPosition;
         this.playerAttackStyle = playerAttackStyle;
+    }
+
+    ZulrahPhase(final ZulrahPosition zulrahPosition,
+                final ZulrahStance zulrahStance,
+                final PlayerPosition playerPosition,
+                final PlayerAttackStyle playerAttackStyle,
+                final PlayerPosition secondaryPlayerPosition) {
+        this(zulrahPosition, zulrahStance, playerPosition, playerAttackStyle);
+        this.secondaryPlayerPosition = secondaryPlayerPosition;
     }
 }
